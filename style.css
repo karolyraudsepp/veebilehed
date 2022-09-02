@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+body{
+  font-family: 'Arimo', sans-serif;
+  height: 100%;
+  margin:0;
+}
+
+.center-text{
+    text-align: center;
+}
+
+hr{
+  display: none;
+}
+
+.move-center-equal{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.full-width{
+  display: flex;
+  justify-content: center;
+}
+
+.full-width img{
+  width: 90%;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.row-mobile{
+  display: none;
+}
+
+.column-justify-left {
+  display: flex;
+  flex: 50%;
+  justify-content: left;
+  padding-left: 10%;
+}
+
+.column-justify-left-mobile{
+  display: none;
+}
+
+.column-padding-right {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  padding-right: 10%;
+}
+
+.column-padding-right img{
+  max-height: 70%;
+  max-width: 80%;
+}
+
+.pond{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.pond img {
+    border-radius: 50%;
+    max-height: 150px;
+    max-width: 224px;
+  }
+
+footer {
+  background-color: #E0E0E0;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+footer div {
+  display: flex;
+}
+
+.column-footer{
+  display: flex;
+  flex: 50%;
+  justify-content: left;
+}
+
+.justify-images{
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40%;
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.justify-images img{
+  padding: 3px;
+}
+
+/*Mobiildisain*/
+
+@media only screen and (max-width: 950px) {
+
+  .column-padding-right{
+    display:none;
+  }
+
+  .column-padding-right img{
+    display:none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+.full-width img{
+    width: 100%;
+}
+
+.pond{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.pond img{
+  padding: 5px;
+}
+
+.line{
+  align-items: center;
+  width: 50%;
+  border-top: black;
+}
+
+hr{
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.row-mobile {
+  display: flex;
+}
+
+.column-justify-left-mobile{
+display: flex;
+flex: 50%;
+justify-content: left;
+padding-left: 10%;
+}
+
+}
